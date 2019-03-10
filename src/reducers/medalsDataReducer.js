@@ -1,5 +1,5 @@
 import { EDIT_ROW, DELETE_ROW } from '../actions/constants'
-import { removeRow, sortTable } from '../utilities'
+import { removeRow } from '../utilities'
 import { olympicMedalsByCountry } from '../fixtures/data'
 
 export const initialState = {

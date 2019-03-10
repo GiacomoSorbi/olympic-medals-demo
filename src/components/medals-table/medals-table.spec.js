@@ -2,16 +2,16 @@ import * as React from 'react'
 import { mount } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import AddButton from './'
+import MedalsTable from './'
 
-describe('AddButton should', () => {
+describe('MedalsTable should', () => {
   it('exist', () => {
-    expect(AddButton).not.toBeUndefined()
+    expect(MedalsTable).not.toBeUndefined()
   })
 
   it('have a consistent structure', () => {
     const wrapper = mount(
-      <AddButton
+      <MedalsTable
         sortCriteria='bronze-desc'
         data={[]}
         changeSorting={jest.fn()}

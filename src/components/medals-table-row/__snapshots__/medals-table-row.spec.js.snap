@@ -15,10 +15,10 @@ exports[`MedalsTableRow should have a consistent structure 1`] = `
 >
   <tr>
     <th
-      className="text-left align-middle"
+      className="text-center align-middle"
       scope="row"
     >
-       
+      <br />
       PippiLand
     </th>
     <td

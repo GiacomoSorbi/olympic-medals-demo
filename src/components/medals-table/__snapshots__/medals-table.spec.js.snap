@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddButton should have a consistent structure 1`] = `
+exports[`MedalsTable should have a consistent structure 1`] = `
 <MedalsTable
   changeSorting={[MockFunction]}
   data={Array []}
