@@ -7,10 +7,11 @@ const MedalsTableRow = props => {
   const country = props.countryData.name
   return (
     <tr className={props.className}>
-      <th className='text-left align-middle' scope='row'>
+      <th className='text-center align-middle' scope='row'>
         {flags[country] ? (
           <img height='20px' src={flags[country]} alt={country} />
-        ) : null}{' '}
+        ) : null}
+        <br />
         {country}
       </th>
       <td className='text-right border align-middle'>

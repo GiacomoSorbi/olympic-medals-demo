@@ -1,5 +1,6 @@
 {
   "name": "olympic-medals-demo",
+  "homepage": "https://GiacomoSorbi.github.io/olympic-medals-demo",
   "version": "0.1.0",
   "private": true,
   "installConfig": {
@@ -9,6 +10,7 @@
     "bootstrap": "^4.3.1",
     "enzyme-adapter-react-16": "^1.10.0",
     "enzyme-to-json": "^3.3.5",
+    "gh-pages": "^2.0.1",
     "ramda": "^0.26.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -20,6 +22,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
