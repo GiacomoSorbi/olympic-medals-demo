@@ -1,6 +1,6 @@
 import { TOGGLE_MODAL, CHANGE_SORTING } from '../actions/constants'
-const initialState = {
-  modal: null,
+export const initialState = {
+  openModal: null,
   sortCriteria: 'gold-desc',
 }
 

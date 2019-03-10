@@ -2,7 +2,7 @@ import { EDIT_ROW, DELETE_ROW } from '../actions/constants'
 import { removeRow, sortTable } from '../utilities'
 import { olympicMedalsByCountry } from '../fixtures/data'
 
-const initialState = {
+export const initialState = {
   medalsData: olympicMedalsByCountry,
 }
 

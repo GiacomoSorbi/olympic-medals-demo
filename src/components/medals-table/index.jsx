@@ -16,7 +16,7 @@ const MedalsTable = props => (
           <tr className='light'>
             <th className='align-middle border'>Country</th>
             {medalTypesTotal.map(medal => (
-              <th className='align-middle border'>
+              <th key={medal} className='align-middle border'>
                 <div className='d-flex align-items-center justify-content-between'>
                   <Medal color={medal} />
                   <div className='no-mobile'>
