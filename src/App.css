@@ -1,15 +1,12 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.olympic-logo {
+  animation: olympic-logo-breath infinite 3s ease-in-out;
   height: 40vmin;
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
+.App {
+  text-align: center;
+  background-color: azure;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,11 +20,14 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes olympic-logo-breath {
+  0% {
+    transform: scale(0.98);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(0.98);
   }
 }
