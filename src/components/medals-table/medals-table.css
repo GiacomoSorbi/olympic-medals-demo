@@ -1,9 +1,82 @@
-.table-width {
-  width: 100%;
+.olympic-logo {
+  animation: olympic-logo-breath infinite 3s ease-in-out;
+  height: 40vmin;
+  pointer-events: none;
 }
 
-@media only screen and (min-width: 768px) {
-  .table-width {
+/* Calm, deep breathing like rhythm animation  */
+@keyframes olympic-logo-breath {
+  0% {
+    transform: scale(0.98);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
+
+tr {
+  background-color: #ddd;
+  transition: 0.5s background-color ease-in-out;
+}
+
+tr.light {
+  background-color: #999;
+}
+
+tr:hover {
+  background: lightgreen;
+  transition: 0.2s background-color ease-in-out;
+}
+
+table.table {
+  margin-bottom: 0;
+}
+
+.table tr {
+  padding: 0.5rem;
+}
+
+.table-container .table th,
+.table-container .table td {
+  padding: 0.75rem 0.25rem;
+}
+
+.table-container {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.edit-icon {
+  width: 20px;
+}
+.medal-icon {
+  width: 40px;
+}
+
+.no-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .table-container {
+    font-size: calc(10px + 2vmin);
     width: 75%;
+  }
+  .btn {
+    padding: 0.375rem 0.75rem;
+  }
+  .edit-icon,
+  .medal-icon {
+    width: 2em;
+  }
+  .no-mobile {
+    display: block;
+  }
+  .table-container .table th,
+  .table-container .table td {
+    padding: 0.75rem 0.75rem;
   }
 }

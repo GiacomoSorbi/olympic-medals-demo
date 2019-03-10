@@ -1,9 +1,3 @@
-.olympic-logo {
-  animation: olympic-logo-breath infinite 3s ease-in-out;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App {
   text-align: center;
   background-color: azure;
@@ -12,22 +6,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 14px;
   color: white;
+}
+.App .btn {
+  padding: 2px;
+  line-height: 0;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes olympic-logo-breath {
-  0% {
-    transform: scale(0.98);
-  }
-  50% {
-    transform: scale(1.03);
-  }
-  100% {
-    transform: scale(0.98);
-  }
 }
