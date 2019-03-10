@@ -5,14 +5,22 @@ import arrow from '../../icons/arrow.svg'
 
 const SortButtons = props => (
   <div className='sort-buttons d-flex flex-column'>
-    <Button data-country={props.medal} color='primary' onClick={props.onEdit}>
+    <Button
+      data-sort-direction={`${props.color}-desc`}
+      color={
+        `${props.color}-desc` === props.sortCriteria ? 'success' : 'primary'
+      }
+      onClick={props.onClick}
+    >
       <img src={arrow} alt='edit row' />
     </Button>
     <Button
-      data-country={props.medal}
-      color='primary'
+      data-sort-direction={`${props.color}-asc`}
+      color={
+        `${props.color}-asc` === props.sortCriteria ? 'success' : 'primary'
+      }
       className='reversed'
-      onClick={props.onEdit}
+      onClick={props.onClick}
     >
       <img src={arrow} alt='edit row' />
     </Button>

@@ -7,4 +7,9 @@ describe('interfaceSelectors should', () => {
       stateFixture.interface.openModal,
     )
   })
+  it('getSortCriteria', () => {
+    expect(interfaceSelectors.getSortCriteria(stateFixture)).toBe(
+      stateFixture.interface.sortCriteria,
+    )
+  })
 })

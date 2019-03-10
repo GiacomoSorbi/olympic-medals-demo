@@ -9,10 +9,9 @@ import {
   ModalBody,
   ModalHeader,
 } from 'reactstrap'
-import edit from '../../icons/edit.svg'
 import Medal from '../medal'
 import { flags } from '../../fixtures/data'
-import { medalTypes } from '../../utilities'
+import { getAvailableCountries, medalTypes } from '../../utilities'
 
 const MedalsModal = props => {
   const currentCountry = props.data.find(
@@ -24,7 +23,7 @@ const MedalsModal = props => {
       <ModalHeader>
         {currentCountry
           ? `Edit Details for ${props.isOpen}`
-          : 'Create new Recording'}
+          : 'Create new Entry'}
       </ModalHeader>
       <ModalBody>
         <Form onSubmit={props.editRow}>
@@ -32,18 +31,11 @@ const MedalsModal = props => {
             <FormGroup>
               <Label for='name'>Select Country</Label>
               <Input type='select' min='0' name='name' id='name'>
-                {Object.keys(flags)
-                  .filter(
-                    missingCountry =>
-                      !props.data.find(
-                        country => country.name === missingCountry,
-                      ),
-                  )
-                  .map(country => (
-                    <option value={country} key={country}>
-                      {country}
-                    </option>
-                  ))}
+                {getAvailableCountries(flags, props.data).map(country => (
+                  <option value={country} key={country}>
+                    {country}
+                  </option>
+                ))}
               </Input>
             </FormGroup>
           )}

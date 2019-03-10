@@ -1,0 +1,34 @@
+button.btn.add-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1vw;
+  border-bottom-left-radius: 2vw;
+}
+
+.add-button .add-icon {
+  width: 5vw;
+  transform: rotate(360deg);
+  transition: 0.5s transform ease-in-out;
+}
+
+.add-button .add-text {
+  color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 0;
+  padding: 0;
+  transition: 0.2s max-width ease-in-out, 0.2s padding ease-in-out;
+}
+
+.add-button:hover .add-icon {
+  transform: rotate(0deg);
+  transition: 0.2s transform ease-in-out;
+}
+
+.add-button:hover .add-text {
+  color: white;
+  max-width: 15vw;
+  padding: 1vw;
+  transition: 0.5s max-width ease-in-out, 0.5s padding ease-in-out;
+}

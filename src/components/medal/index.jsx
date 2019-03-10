@@ -4,7 +4,7 @@ const colors = {
   gold: '#ffd700',
   silver: '#c0c0c0',
   bronze: '#cd7f32',
-  all: '#8F8',
+  total: '#8F8',
 }
 
 const Medal = props => (

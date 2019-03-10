@@ -1,6 +1,7 @@
-import { TOGGLE_MODAL } from '../actions/constants'
+import { TOGGLE_MODAL, CHANGE_SORTING } from '../actions/constants'
 const initialState = {
   modal: null,
+  sortCriteria: 'gold-desc',
 }
 
 const interfaceReducer = (state = initialState, action) => {
@@ -9,6 +10,11 @@ const interfaceReducer = (state = initialState, action) => {
       return {
         ...state,
         openModal: state.openModal === action.payload ? null : action.payload,
+      }
+    case CHANGE_SORTING:
+      return {
+        ...state,
+        sortCriteria: action.payload,
       }
     default:
       return state

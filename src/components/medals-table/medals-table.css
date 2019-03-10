@@ -27,7 +27,7 @@ tr.light {
 }
 
 tr:hover {
-  background: lightgreen;
+  background: lightslategray;
   transition: 0.2s background-color ease-in-out;
 }
 

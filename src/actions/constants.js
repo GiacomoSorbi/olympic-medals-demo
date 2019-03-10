@@ -3,9 +3,10 @@
 /*
   asynch actions
 */
+export const CHANGE_SORTING = 'CHANGE_SORTING'
+export const DELETE_ROW = 'DELETE_ROW'
 export const EDIT_ROW = 'EDIT_ROW'
 export const TOGGLE_MODAL = 'TOGGLE_MODAL'
-export const DELETE_ROW = 'DELETE_ROW'
 /*
   synch actions
 */
